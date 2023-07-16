@@ -1,0 +1,36 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>light bulb</title>
+    <style>
+        img{
+            height:400px;
+            background-color:bisque;
+        }
+        .bulb{
+            height: 400px;
+        }
+        button{
+            height: 80px;
+            width: 80px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="turnon()">on</button>
+    <img id="bulb" src="https://st4.depositphotos.com/1433239/22267/i/450/depositphotos_222677274-stock-photo-glowing-light-bulb-dark-background.jpg">
+    <button onclick="turnoff()">off</button>
+    <script>
+        function turnon()
+        {
+            document.getElementById("bulb").src="https://st4.depositphotos.com/1433239/22267/i/450/depositphotos_222677274-stock-photo-glowing-light-bulb-dark-background.jpg";
+        }
+        function turnoff()
+        {
+            document.getElementById("bulb").src="https://img.freepik.com/premium-vector/cute-ghost-cartoon-character_96373-122.jpg?w=2000";
+        }
+    </script>
+</body>
+</html>
